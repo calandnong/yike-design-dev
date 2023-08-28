@@ -96,6 +96,10 @@
         {
           "name": "Form 表单",
           "src": "form"
+        },
+        {
+          "name": "TextArea 文本域",
+          "src": "text-area"
         }
       ]
     },
@@ -109,6 +113,10 @@
         {
           "name": "Empty  空状态",
           "src": "empty"
+        },
+        {
+          "name": "Table 表格",
+          "src": "table"
         },
         {
           "name": "Badge 徽标",

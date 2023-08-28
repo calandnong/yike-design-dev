@@ -1,7 +1,7 @@
 {
-  "name": "yike-design-ui",
+  "name": "@yike-design/ui",
+  "version": "0.0.1",
   "type": "module",
-  "private": false,
   "description": "yike-design-ui",
   "author": "ecaps1038 https://github.com/ecaps1038",
   "homepage": "https://github.com/ecaps1038/yike-design-dev",
@@ -21,7 +21,7 @@
     "yike"
   ],
   "main": "lib/index.js",
-  "module": "es/index.js",
+  "module": "es/index.mjs",
   "types": "es/index.d.ts",
   "files": [
     "es",
@@ -50,6 +50,6 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@yike/build": "workspace:*"
+    "@yike-design/build": "workspace:*"
   }
 }
