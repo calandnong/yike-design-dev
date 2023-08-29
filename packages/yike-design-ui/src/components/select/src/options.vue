@@ -1,22 +1,29 @@
 <template>
   <div :class="bem()">
-    <slot></slot>
+    <slot>
+      <span>我是label{{ labelText }}</span>
+    </slot>
   </div>
 </template>
 
 <script setup lang="ts">
-import { OptionsProps } from './options'
+import { OptionsProps } from './interface'
 import { createCssScope } from '../../utils/bem'
+import { computed } from 'vue'
 
 const bem = createCssScope('select-options')
 
 defineOptions({
-  name: 'YkSelectOptions',
+  name: 'YkOptions',
 })
 
-withDefaults(defineProps<OptionsProps>(), {
+const props = withDefaults(defineProps<OptionsProps>(), {
   label: '',
   value: '',
   disabled: false,
+})
+
+const labelText = computed(() => {
+  return props.label ?? props.value
 })
 </script>

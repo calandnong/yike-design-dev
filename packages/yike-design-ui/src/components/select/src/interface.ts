@@ -1,3 +1,9 @@
+export interface SelectProps {}
+
+export interface SelectDropdownProps {
+  name?: string;
+}
+
 export interface OptionsProps {
   /**
    * 选项的标签，若不设置则默认与value相同
