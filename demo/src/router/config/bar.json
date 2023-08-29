@@ -100,6 +100,10 @@
         {
           "name": "TextArea 文本域",
           "src": "text-area"
+        },
+        {
+          "name": "Select 选择器",
+          "src": "select"
         }
       ]
     },
